@@ -5,11 +5,11 @@ class User:
         if not id_:
             raise ValueError("User id cannot be empty")
 
-        self.id_ = id_
-        self.name = name
+        self._id_ = id_
+        self._name = name
 
     def get_id(self) -> str:
-        return self.id_
+        return self._id_
 
     def get_name(self) -> str:
-        return self.name
+        return self._name
