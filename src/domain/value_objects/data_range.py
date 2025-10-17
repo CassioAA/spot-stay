@@ -19,7 +19,7 @@ class DataRange:
     def get_end_date(self) -> date:
         return self._end_date
 
-    def get_total_days(self) -> int:
+    def get_total_nights(self) -> int:
         diff_time = self._end_date - self._start_date
         return diff_time.days
 

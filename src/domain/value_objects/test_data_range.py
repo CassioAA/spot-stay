@@ -31,13 +31,13 @@ def test_should_calculate_total_days_correctly() -> None:
     end_date = date(2020, 1, 15)
     stay_range = data_range.DataRange(start_date, end_date)
 
-    assert stay_range.get_total_days() == (end_date - start_date).days
+    assert stay_range.get_total_nights() == (end_date - start_date).days
 
     start_date = date(2020, 1, 1)
     end_date = date(2020, 1, 15)
     stay_range = data_range.DataRange(start_date, end_date)
 
-    assert stay_range.get_total_days() == (end_date - start_date).days
+    assert stay_range.get_total_nights() == (end_date - start_date).days
 
 def test_should_report_overlap() -> None:
     # beginning overlying
